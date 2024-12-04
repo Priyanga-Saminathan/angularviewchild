@@ -1,0 +1,16 @@
+<div>
+    <p #para>view-child works!</p>
+    <p #plural>view children demo</p>
+    <p #plural>view children demo1</p>
+    <ng-content></ng-content>
+    <input type="text" (blur)="function($event)" [(ngModel)]="colour"> 
+    <div>
+        <p>{{child.counter}}</p>
+        <button (click)="inc()">increament</button>
+        <button (click)="dec()">decrement</button>
+    </div>
+    <app-children #child>
+        <h5 #head>This is child content from parent comp</h5>
+    </app-children>
+</div>
+
